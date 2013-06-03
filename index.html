@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=320; user-scalable=no" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SUNDANESE</title>
+<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jQuizMe.css"/>
+</head>
+<body>
+<div id="quizArea"/>
+</body>
+<script type="text/javascript" src = "js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jQuizMe-2.2.1.js"></script>
+<script type="text/javascript">
+$( function($){
+var quiz = {
+multiList: [
+{
+ques: "Siapakah Saudara Kembar Ariel Noah?",
+ans: "Zulham",
+ansSel: ["G-Fenk"]
+},
+{
+ques: "Mengapa Kuda Berjalan dengan kai empat?",
+ans: "Lamun Berjalan Dengan 2 Kaki Mah Atuh Si G-Fenk",
+ansSel: ["Takdir"]
+},
+{
+ques: "Laparrr...",
+ans: "Dahar Bro",
+ansSel: ["Salto Jang"]
+}
+],
+},
+options = {
+help: "<center>Nu Maca Cing Budug</center>",
+intro: "KOKOPLOKAN<br>Info lebih lanjut, Anda bisa Datang ke MATRIAL Terdekat",
+allRandom: true,
+title: "KOKOPLOKAN"
+};
+$("#quizArea").jQuizMe(quiz, options);
+});
+</script>
+</html>
